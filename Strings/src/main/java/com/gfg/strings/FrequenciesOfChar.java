@@ -3,7 +3,7 @@ package com.gfg.strings;
 public class FrequenciesOfChar {
 
 	public static void main(String[] args) {
-		String input = "rinki";
+		String input = "geeksforgeeks";
 		int[] count = new int[26];
 
 		for (int i = 0; i < input.length(); i++)
