@@ -21,7 +21,7 @@ public class LargestNumber {
 	}
 
 	/*
-	 * efficient solution time complexity Big-O(n) 
+	 * efficient solution time complexity Big-O(n)
 	 */
 	public static int largestNoEfficient(int[] arr) {
 		int res = 0;
@@ -29,7 +29,7 @@ public class LargestNumber {
 		for (int i = 1; i < arr.length; i++)
 			if (arr[i] > arr[res])
 				res = i;
-		
+
 		return res;
 
 	}
