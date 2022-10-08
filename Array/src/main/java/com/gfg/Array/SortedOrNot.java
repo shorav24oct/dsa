@@ -3,7 +3,7 @@ package com.gfg.Array;
 public class SortedOrNot {
 
 	/*
-	 * naive approach
+	 * naive approach 
 	 * time complexity Big-O(n*n)
 	 */
 	static boolean isSorted(int[] arr) {
@@ -14,13 +14,23 @@ public class SortedOrNot {
 
 		return true;
 	}
-	
-	
+
+	/*
+	 * efficient approach
+	 * time complexity Big-O(n)
+	 */
+	static boolean isSort(int[] arr) {
+		for (int i = 1; i < arr.length; i++)
+			if (arr[i] < arr[i - 1])
+				return false;
+
+		return true;
+	}
 
 	public static void main(String[] args) {
-		int[] arr = { 5, 8, 10, 70, 2000 };
+		int[] arr = { 5, 80, 10, 70, 2000 };
 
-		System.out.println(isSorted(arr));
+		System.out.println(isSort(arr));
 	}
 
 }
