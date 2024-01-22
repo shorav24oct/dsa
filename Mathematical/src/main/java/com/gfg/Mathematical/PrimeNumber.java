@@ -6,16 +6,17 @@ public class PrimeNumber {
 		System.out.println(checkPrime(7));
 	}
 
+	// naive method
 	private static boolean checkPrime(int no) {
-		int count = 0;
-		for (int i = 2; i < no; i++) {
-			if (no % i == 0) {
-				count++;
-			}
-		}
-		
-		boolean result = (count >= 1) ? false : true;
-		return result;
+
+		if (no == 1)
+			return false;
+
+		for (int i = 2; i < no; i++)
+			if (no % i == 0)
+				return false;
+
+		return true;
 	}
 
 }
