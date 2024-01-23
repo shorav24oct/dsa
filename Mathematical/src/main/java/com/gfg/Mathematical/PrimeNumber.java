@@ -7,7 +7,8 @@ public class PrimeNumber {
 		System.out.println(checkPrimeEfficient(9));
 	}
 
-	// naive method
+	// naive method 
+	// time complexity O(n)
 	private static boolean checkPrime(int no) {
 
 		if (no == 1)
@@ -21,7 +22,7 @@ public class PrimeNumber {
 	}
 
 	// efficient solution
-
+	// time complexity O(√n)
 	private static boolean checkPrimeEfficient(int no) {
 		if (no == 1)
 			return false;
