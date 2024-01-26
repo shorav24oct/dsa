@@ -5,17 +5,12 @@ import java.util.Arrays;
 public class InsertUnsorted {
 
 	public static void main(String[] args) {
-		int arr[] = new int[5];
-		
-		arr[0] = 5;
-		arr[1] = 10;
-		arr[2] = 20;
-		arr[3] = 7;
-		
+		int arr[] = { 10, 5, 7, 20, 0 };
+
 		System.out.println("Before Insert : " + Arrays.toString(arr));
-		
+
 		System.out.println("After insert array size => " + insert(arr, 4, 3, 5, 2));
-		
+
 		System.out.println("After Insert : " + Arrays.toString(arr));
 	}
 
