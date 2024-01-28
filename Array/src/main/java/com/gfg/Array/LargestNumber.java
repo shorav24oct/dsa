@@ -6,17 +6,21 @@ public class LargestNumber {
 	 * naive approach Time Complexity Big-O(n*n)
 	 */
 	public static int largestNoNaive(int[] arr) {
+		
 		for (int i = 0; i < arr.length; i++) {
 			boolean flag = true;
+			
 			for (int j = 0; j < arr.length; j++) {
 				if (arr[j] > arr[i]) {
 					flag = false;
 					break;
 				}
-			}
+			} // inner for loop
+			
 			if (flag == true)
 				return i;
-		}
+		} // outer for loop
+		
 		return -1;
 	}
 
