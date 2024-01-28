@@ -9,7 +9,7 @@ public class LargestNumber {
 		for (int i = 0; i < arr.length; i++) {
 			boolean flag = true;
 			for (int j = 0; j < arr.length; j++) {
-				if (arr[i] < arr[j]) {
+				if (arr[j] > arr[i]) {
 					flag = false;
 					break;
 				}
@@ -35,9 +35,9 @@ public class LargestNumber {
 	}
 
 	public static void main(String[] args) {
-		int[] arr = { 500, 8, 100, 70, 2000 };
+		int[] arr = { 10, 5, 20, 8 };
 
-		System.out.println(largestNoEfficient(arr));
+		System.out.println(largestNoNaive(arr));
 	}
 
 }
