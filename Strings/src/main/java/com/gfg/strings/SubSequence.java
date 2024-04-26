@@ -1,6 +1,11 @@
 package com.gfg.strings;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class SubSequence {
+
+	static List<String> al = new ArrayList<>();
 
 	/*
 	 * Time complexity: O( n^3 )
@@ -28,10 +33,25 @@ public class SubSequence {
 		}
 	}
 
+	/*
+	 * Time Complexity: O(2^n)
+	 */
+	private static void findsubsequences(String s, String ans) {
+		if (s.length() == 0) {
+			al.add(ans);
+			return;
+		}
+		findsubsequences(s.substring(1), ans + s.charAt(0));
+		findsubsequences(s.substring(1), ans);
+	}
+
 	public static void main(String[] args) {
 		String str = "abc";
-		SubString(str, str.length());
+		//SubString(str, str.length());
 		System.out.println("------------------");
-		printSubStrings(str);
+		//printSubStrings(str);
+		System.out.println("------------------");
+		findsubsequences("ab", "");
+		System.out.println(al);
 	}
 }
