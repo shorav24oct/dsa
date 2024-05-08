@@ -2,6 +2,9 @@ package com.gfg.Array;
 
 public class SecondLargestNumber {
 
+	/*
+	 * Naive Approach
+	 */
 	static int secondLargest(int[] arr) {
 		int largest = firstLargest(arr);
 		int res = -1;
@@ -27,7 +30,6 @@ public class SecondLargestNumber {
 
 	public static void main(String[] args) {
 		int[] arr = { 5000, 8, 10, 7, 2000 };
-
 		System.out.println(secondLargest(arr));
 	}
 }
