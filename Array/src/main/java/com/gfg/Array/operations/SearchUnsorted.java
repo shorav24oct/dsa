@@ -1,4 +1,4 @@
-package com.gfg.Array;
+package com.gfg.Array.operations;
 
 public class SearchUnsorted {
 

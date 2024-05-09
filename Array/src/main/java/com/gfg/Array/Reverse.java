@@ -12,6 +12,7 @@ public class Reverse {
 
 	/*
 	 * time complexity Theta-n
+	 * Aux Space Theta-1
 	 */
 	private static void reverse(int[] arr) {
 		int low = 0;

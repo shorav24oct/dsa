@@ -1,4 +1,4 @@
-package com.gfg.Array;
+package com.gfg.Array.operations;
 
 import java.util.Arrays;
 
