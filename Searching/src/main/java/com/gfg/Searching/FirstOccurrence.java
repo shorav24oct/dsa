@@ -8,7 +8,7 @@ public class FirstOccurrence {
 		System.out.println("Number " + numberToBeSearch + " is present at index: " + search(arr, numberToBeSearch));
 	}
 
-	private static int search(int[] arr, int numberToBeSearch) {
+	static int search(int[] arr, int numberToBeSearch) {
 		int low = 0;
 		int high = arr.length - 1;
 
