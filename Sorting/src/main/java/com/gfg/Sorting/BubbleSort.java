@@ -2,6 +2,10 @@ package com.gfg.Sorting;
 
 import java.util.Arrays;
 
+/*
+ * Time Complexity: O(n^2), where n is the number of elements in the input array.
+ * Space Complexity: O(1)
+ */
 public class BubbleSort {
 	public static void main(String[] args) {
 		int[] arr = { 5, 10, 8, 6 };
