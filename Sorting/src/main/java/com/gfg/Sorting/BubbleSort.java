@@ -3,6 +3,7 @@ package com.gfg.Sorting;
 import java.util.Arrays;
 
 /*
+ * In 1st pass move the largest element to last position, in 2nd pass move the second largest element to the 2nd last position.
  * Time Complexity: O(n^2), where n is the number of elements in the input array.
  * Space Complexity: O(1)
  */
