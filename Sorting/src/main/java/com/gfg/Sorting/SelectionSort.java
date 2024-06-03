@@ -4,9 +4,9 @@ import java.util.Arrays;
 
 /*
  * find the minimum element from unsorted part and putting it at the beginning.
- * The algorithm maintains two subarrays in a given array.
- * The subarray which is already sorted. 
- * Remaining subarray which is unsorted.
+ * The algorithm maintains two sub-arrays in a given array.
+ * The sub-array which is already sorted. 
+ * Remaining sub-array which is unsorted.
  * Time Complexity: O(n*n), where n is the number of elements in the input array.
  * Space Complexity: O(1)
  */
