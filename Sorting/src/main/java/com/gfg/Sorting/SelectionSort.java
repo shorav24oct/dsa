@@ -19,6 +19,13 @@ public class SelectionSort {
 		System.out.println("Array after Sort : " + Arrays.toString(arr));
 	}
 
+	/*
+	 * Initialize minimum value(min_idx) to location 0
+	 * Traverse the array to find the minimum element in the array
+	 * While traversing if any element smaller than min_idx is found then swap both the values.
+	 * Then, increment min_idx to point to next element
+	 * Repeat until array is sorted
+	 */
 	private static void sort(int[] arr, int length) {
 		for (int i = 0; i < length - 1; i++) {
 			int min_ind = i;
