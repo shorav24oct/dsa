@@ -8,6 +8,8 @@ public class InsertAtBegin {
 		head = insertBegin(head, 30);
 		head = insertBegin(head, 20);
 		head = insertBegin(head, 10);
+		
+		System.out.println(head);
 	}
 	
 	static Node insertBegin(Node head, int x) {
