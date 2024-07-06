@@ -3,7 +3,7 @@ package com.gfg.strings;
 public class LeftMostRepeatingChar {
 
 	public static void main(String[] args) {
-		System.out.println(lmRepeatingChar1("abbcc"));
+		System.out.println(lmRepeatingChar2("abcc"));
 	}
 
 	/*
@@ -16,6 +16,22 @@ public class LeftMostRepeatingChar {
 					return i;
 			}
 		}
+		return -1;
+	}
+
+	/*
+	 * better approach
+	 */
+	static int lmRepeatingChar2(String str) {
+		int[] count = new int[256];
+
+		for (int i = 0; i < str.length(); i++)
+			count[str.charAt(i)]++;
+
+		for (int i = 0; i < str.length(); i++)
+			if (count[str.charAt(i)] > 1)
+				return i;
+
 		return -1;
 	}
 
