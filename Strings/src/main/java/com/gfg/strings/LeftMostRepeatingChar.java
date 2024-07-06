@@ -3,7 +3,7 @@ package com.gfg.strings;
 public class LeftMostRepeatingChar {
 
 	public static void main(String[] args) {
-		System.out.println(leftMostRepeatChar2("babcc"));
+		System.out.println(leftMostRepeatChar2("abbccbb"));
 	}
 
 	/*
