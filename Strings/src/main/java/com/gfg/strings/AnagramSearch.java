@@ -8,7 +8,7 @@ public class AnagramSearch {
 
 	public static void main(String[] args) {
 		String text = "ABCD";
-		String pattern = "DC";
+		String pattern = "CD";
 		System.out.println(isPresent(text, pattern));
 	}
 
@@ -26,7 +26,7 @@ public class AnagramSearch {
 				return true;
 
 			countText[text.charAt(i)]++;
-			countText[text.charAt(i - pattern.length())]--;
+			countText[text.charAt(i - pattern.length())]--; // removing previous window 1st char
 		}
 		return false;
 	}
