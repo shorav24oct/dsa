@@ -3,9 +3,9 @@ package com.citi.array;
 public class FindLargest {
 
 	public static void main(String[] args) {
-		int[] arr = { 10, 5, 20, 80 };
+		int[] arr = { 10, 5, 20, 8 };
 
-		System.out.println(largestNaive(arr));
+		System.out.println(largestNoEfficient(arr));
 	}
 
 	/*
@@ -27,6 +27,14 @@ public class FindLargest {
 				return i;
 		}
 		return -1;
+	}
+
+	static int largestNoEfficient(int[] arr) {
+		int res = 0;
+		for (int i = 1; i < arr.length; i++)
+			if (arr[i] > arr[res])
+				res = i;
+		return res;
 	}
 
 }
